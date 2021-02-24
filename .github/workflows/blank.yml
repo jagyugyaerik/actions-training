@@ -37,4 +37,4 @@ jobs:
           azcliversion: 2.0.72
           inlineScript: |
             ENV=$(git branch --show-current)
-            az group create -n "$ENV"EjaSentia -l westeurope
+            az group create -n "$GITHUB_HEAD_REF"EjaSentia -l westeurope
