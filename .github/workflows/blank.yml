@@ -20,5 +20,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo $(git branch --show-current)
+      - name: multiline
+        run: |
+          ENV=$(git branch --show-current)
+          echo ${{ secrets[AZURE_$ENV_CREDENTIALS }}
