@@ -26,7 +26,8 @@ jobs:
       - name: print env
         run: |
           echo ${{ env.RESOURCE_GROUP }}
-          echo $GITHUB_HEAD_REF
+          echo ${GITHUB_HEAD_REF}
+          echo ${BRANCH_NAME}
 
       # Runs a single command using the runners shell
       - name: Azure Login
