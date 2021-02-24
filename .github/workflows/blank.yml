@@ -24,10 +24,8 @@ jobs:
       - uses: actions/checkout@v2
       
       - name: print env
-        run: |
-          echo ${{ env.RESOURCE_GROUP }}
-          echo ${GITHUB_HEAD_REF}
-          echo ${BRANCH_NAME}
+        run:
+          echo $GITHUB_HEAD_REF
 
       # Runs a single command using the runners shell
       - name: Azure Login
