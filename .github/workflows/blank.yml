@@ -30,4 +30,4 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az account show
+            az ad sp create-for-rbac --skip-assignment --name myAKSClusterServicePrincipal
