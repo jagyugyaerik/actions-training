@@ -36,4 +36,5 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az ad sp create-for-rbac --skip-assignment --name myAKSClusterServicePrincipal
+            ENV=$(git branch --show-current)
+            az group create -n "$ENV"EjaSentia -l westeurope
