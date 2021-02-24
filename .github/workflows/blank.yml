@@ -36,4 +36,4 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az group create -n ${{ EjaSentia -l westeurope
+            az deployment group create
