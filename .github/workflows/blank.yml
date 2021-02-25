@@ -39,4 +39,4 @@ jobs:
         with:
           azcliversion: 2.0.72
           inlineScript: |
-            az deployment group create
+            az aks --help
