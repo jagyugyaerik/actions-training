@@ -32,6 +32,10 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          
+      - name: print env
+        run: |
+          az aks --help
 
       - name: Azure CLI script
         uses: azure/CLI@v1
